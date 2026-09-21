@@ -90,13 +90,14 @@ def cask(token: str, version: str, digest: str) -> str:
     return f'''cask "{token}" do
   version "{version}"
   sha256 "{digest}"
-  url "https://github.com/{REPOSITORY}/releases/download/v#{{version}}/Qrow-#{{version}}.dmg"
 
+  url "https://github.com/{REPOSITORY}/releases/download/v#{{version}}/Qrow-#{{version}}.dmg"
   name "Qrow"
   desc "Desktop SQL client for Apache Kyuubi and Spark"
   homepage "https://github.com/{REPOSITORY}"
 
-  depends_on macos: ">= :big_sur"
+  depends_on :macos
+
   app "Qrow.app"
 end
 '''
