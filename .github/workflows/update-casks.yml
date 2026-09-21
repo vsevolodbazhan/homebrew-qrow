@@ -30,7 +30,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- Casks; then
+          if git diff --quiet -- Casks && [ -z "$(git ls-files --others --exclude-standard -- Casks)" ]; then
             echo "Casks are already current."
             exit 0
           fi
