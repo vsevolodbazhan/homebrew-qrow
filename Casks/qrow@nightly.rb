@@ -1,6 +1,6 @@
 cask "qrow@nightly" do
-  version "0.4.0-nightly.20261110.48"
-  sha256 "0f53f8dc3d779d57b14e4993ff95bf0c6d11b80db2ce6b2b3beb013004e42ba6"
+  version "0.4.0-nightly.20261111.49"
+  sha256 "68c07be0058e9c18ec88833aa828ae21b3621167b00f904d09d4e5274b5f90ff"
 
   url "https://github.com/vsevolodbazhan/qrow/releases/download/v#{version}/Qrow-#{version}.dmg"
   name "Qrow"
